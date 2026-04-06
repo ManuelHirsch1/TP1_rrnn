@@ -1,0 +1,56 @@
+\section{Introducción Teórica}
+\label{sec:intro}
+
+Las redes de Hopfield son un tipo de red neuronal recurrente que operan como sistemas de memoria asociativa. A diferencia de las memorias tradicionales que se acceden mediante direcciones explícitas, estas redes permiten recuperar un patrón completo almacenado a partir de una versión parcial, ruidosa o alterada del mismo.
+
+\subsection{Arquitectura y Regla de Aprendizaje}
+La red está compuesta por $N$ neuronas interconectadas de manera completa y simétrica. Los estados de las neuronas $S_i \in \{-1, 1\}$ toman valores bipolares. Los pesos sinápticos $w_{ij}$ entre la neurona $i$ y la neurona $j$ son simétricos ($w_{ij} = w_{ji}$) y se asume que no existen autoconexiones ($w_{ii} = 0$). 
+
+Para almacenar un conjunto de $p$ patrones de entrenamiento $\xi^\mu$ (con $\mu = 1, \dots, p$), se utiliza una generalización de la regla de Hebb:
+\begin{equation}
+	w_{ij} = \frac{1}{N} \sum_{\mu=1}^{p} \xi_i^\mu \xi_j^\mu \quad \text{para } i \neq j
+\end{equation}
+
+\subsection{Dinámica de Recuperación y Energía}
+Dado un patrón inicial de entrada (que puede contener ruido o información faltante), la red evoluciona actualizando el estado de sus neuronas según la regla:
+\begin{equation}
+	S_i = \text{sign}\left( \sum_{j \neq i} w_{ij} S_j \right)
+\end{equation}
+Cada actualización asincrónica de una neurona disminuye o mantiene igual el valor de una función matemática que describe globalmente a la red, conocida como función de \textit{energía} o función de Lyapunov. Este proceso iterativo continúa hasta que la red alcanza un estado estable (un mínimo local en el paisaje de energía), que idealmente corresponde a uno de los patrones originales memorizados.
+
+\subsection{Capacidad de Almacenamiento}
+\label{sec:intro_almacenamiento}
+A medida que se agregan más patrones a la red, la interferencia o \textit{crosstalk} entre ellos aumenta. Si la cantidad de patrones $p$ es demasiado grande en relación a la cantidad de neuronas $N$, los mínimos de energía se deforman. Como se demuestra en la literatura teórica (Hertz et al., 1991), para mantener una probabilidad de error baja, la capacidad máxima teórica de la red está dada por:
+\begin{equation}
+	p_{max} \approx 0.138 N
+\end{equation}
+Superar este límite provoca un colapso en la memoria asociativa, donde la red pierde abruptamente su capacidad de recuperar los patrones de forma correcta.
+
+\subsection{Estados Espurios}
+La regla de Hebb garantiza la creación de mínimos de energía para los patrones deseados, pero como efecto secundario matemático, también genera mínimos locales adicionales no deseados. Si el estado de la red cae en uno de estos atractores, se dice que convergió a un \textit{estado espurio}. Los más relevantes son:
+\begin{itemize}
+	\item \textbf{Patrones inversos:} Por la simetría de la regla de aprendizaje, si $\xi^\mu$ es un atractor estable de la red, su versión invertida $-\xi^\mu$ también lo será.
+	\item \textbf{Estados de mezcla (Mixture states):} Son estados estables que resultan de la combinación lineal de un número impar de patrones almacenados originalmente.
+\end{itemize}
+
+
+\subsection{Análisis Estadístico de la Capacidad y Probabilidad de Error}
+\label{subsec:capacidad_estadistica}
+
+Para comprender los límites de almacenamiento de la red de Hopfield, es necesario analizar el campo local $h_i^\nu$ que recibe una neurona $i$ cuando se intenta recuperar un patrón específico $\xi^\nu$. Reemplazando la regla de Hebb en la ecuación de actualización, el campo de entrada se puede dividir en dos términos:
+
+\begin{equation}
+	h_i^\nu = \sum_{j \neq i} w_{ij} \xi_j^\nu = \xi_i^\nu + \frac{1}{N} \sum_{j \neq i} \sum_{\mu \neq \nu}^{p} \xi_i^\mu \xi_j^\mu \xi_j^\nu
+\end{equation}
+
+El primer término ($\xi_i^\nu$) es la \textit{señal} deseada, que empuja a la neurona hacia el estado correcto. El segundo término es la interferencia o \textit{crosstalk} generado por el resto de los patrones almacenados. 
+
+Si asumimos que los patrones almacenados son pseudo-aleatorios (es decir, estadísticamente independientes y con igual probabilidad de valer $+1$ o $-1$), el término de \textit{crosstalk} se comporta como una variable aleatoria que sigue una distribución normal (Gaussiana) con media cero y varianza $\sigma^2 = p/N$.
+
+Para que la red cometa un error en la neurona $i$, el término de \textit{crosstalk} debe tener un signo opuesto a $\xi_i^\nu$ y una magnitud mayor a 1, superando así la señal deseada. La probabilidad teórica de que este error ocurra al intentar recuperar un bit se calcula integrando la cola de la distribución Gaussiana:
+
+\begin{equation}
+	P_{error} = \frac{1}{\sqrt{2\pi}} \int_{\sqrt{N/p}}^{\infty} e^{-t^2/2} dt = \frac{1}{2} \left[ 1 - \text{erf}\left( \sqrt{\frac{N}{2p}} \right) \right]
+\end{equation}
+
+Esta ecuación demuestra que la probabilidad de error ($P_{error}$) depende exclusivamente de la relación entre la cantidad de patrones y el tamaño de la red, es decir, el cociente $p/N$ (o $P_{max}/N$ como se expresa en el Trabajo Práctico). A medida que se intenta almacenar una mayor cantidad de patrones en una red de tamaño fijo, la varianza de la interferencia aumenta y, en consecuencia, crece la probabilidad de que la red falle al recuperar los estados correctos.

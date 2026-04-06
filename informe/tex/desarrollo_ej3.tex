@@ -1,0 +1,54 @@
+\section{Ejercicio 3}
+\label{sec:ej3}
+
+
+\subsection{Consigna}
+
+\begin{enumerate}
+	\setcounter{enumi}{2} % Fuerza a que la lista empiece en el número 3
+	\item Implemente una red de Hopfield '82 que aprenda patrones pseudo-aleatorios y estudie qué sucede con los patrones aprendidos cuando algunas interconexiones son eliminadas al azar:
+	\begin{enumerate}
+		\item ¿Cómo cambia el error en función del porcentaje de sinapsis eliminadas?
+		\item ¿Cómo cambia la capacidad en función del porcentaje de sinapsis eliminadas?
+		\item ¿Qué ocurre con la energía durante la evolución asincrónica de la red?
+	\end{enumerate}
+\end{enumerate}
+
+\subsection{Resolución}
+
+\subsubsection{Error frente a perdida de sinapsis}
+
+En este caso se entrenó una red de 200 neuronas con tan solo 15 patrones. Este último número se debe a que el objetivo es evaluar el error de la red atribuible al borrado de componentes de la matriz de pesos \textbf{W}, no a la confusión de la red entre patrones aprendidos. Al entrenar con 15 patrones, nos encontramos por debajo del máximo teórico mencionado en la sección~\ref{sec:intro_almacenamiento}. 
+
+Se implementó un \textit{loop} en el cual se fueron borrando sinapsis aleatoriamente según una lista de porcentajes fija. El error total en función del porcentaje de sinapsis borradas se puede observar en la figura~\ref{fig:error_sinapsis}. Se observa que la red es robusta frente a disturbios, ya que hasta aproximadamente $60\%$ de los pesos de la matriz borrados, el error total se mantiene cercano a 0. En el último tramo del gráfico el error total aumenta bruscamente, dibujando una curva estilo exponencial. Para el caso de todos los valores de la matriz eliminados, el error se vuelve aleatorio con probabilidad de $50\%$, resultado lógico ya que se pierde la propiedad de memoria.
+
+
+\begin{figure}[htpb!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{img_informe/error_sinapsis_borrada.png}
+	\caption{Error total en función del procentaje de sinapsis borradas.}
+	\label{fig:error_sinapsis}
+\end{figure}
+
+\subsubsection{Capacidad frente a pérdida de sinapsis}
+
+Por otro lado, se analizó también como evoluciona la capacidad de la red ante el borrado de pesos de la matriz. Se puso a disposición de la red 120 patrones, ya que es un valor cercano al máximo teórico del mayor umbral en la tabla~\ref{tab:teorica_hertz}. En la figura~\ref{fig:cap_sin} se puede observar la evolución mencionada para los distintos umbrales de tolerancia usados en el ejercicio de la sección~\ref{sec:ej2}. El comportamiento es acorde al que se podría predecir. La capadidad en cada caso baja cuasi linealmente.
+
+
+\begin{figure}[htpb!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{img_informe/capacidad_sinapsis_borradas.png}
+	\caption{Capacidad en función del procentaje de sinapsis borradas.}
+	\label{fig:cap_sin}
+\end{figure}
+
+\subsubsection{Energía ante actualización asincrónica}
+
+Para este último paso, se experimentó con la función Energía.
+
+\begin{figure}[htpb!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{img_informe/energia_ruido_sinapsis.png}
+	\caption{Energía en función de la época.}
+	\label{fig:energia}
+\end{figure}
