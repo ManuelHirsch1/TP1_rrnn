@@ -1,3 +1,8 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{hertz1991}
+J.~A. Hertz, A.~S. Krogh, and R.~G. Palmer, {\em Introduction to the Theory of
+  Neural Computation}.
+\newblock Redwood City, CA: Addison-Wesley, 1991.
 
 \end{thebibliography}

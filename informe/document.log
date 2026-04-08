@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.3)  5 APR 2026 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.3)  8 APR 2026 10:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -576,7 +576,7 @@ Package hyperref Info: Link coloring OFF on input line 27.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./tex/title.tex
-<img_informe/fiuba_logo_nuevo.png, id=108, 367.1316pt x 140.6856pt>
+<img_informe/fiuba_logo_nuevo.png, id=104, 367.1316pt x 140.6856pt>
 File: img_informe/fiuba_logo_nuevo.png Graphic file (type png)
 <use img_informe/fiuba_logo_nuevo.png>
 Package pdftex.def Info: img_informe/fiuba_logo_nuevo.png  used on input line 4
@@ -610,19 +610,19 @@ nforme/fiuba_logo_nuevo.png (PNG copy)>])
 [3
 
 ]) (./tex/desarrollo.tex
-<img_informe/panda_original_recuperado.png, id=168, 722.7pt x 361.35pt>
+<img_informe/panda_original_recuperado.png, id=167, 722.7pt x 361.35pt>
 File: img_informe/panda_original_recuperado.png Graphic file (type png)
 <use img_informe/panda_original_recuperado.png>
 Package pdftex.def Info: img_informe/panda_original_recuperado.png  used on inp
 ut line 36.
 (pdftex.def)             Requested size: 154.78653pt x 77.39099pt.
-<img_informe/perro_original_recuperado.png, id=170, 722.7pt x 361.35pt>
+<img_informe/perro_original_recuperado.png, id=169, 722.7pt x 361.35pt>
 File: img_informe/perro_original_recuperado.png Graphic file (type png)
 <use img_informe/perro_original_recuperado.png>
 Package pdftex.def Info: img_informe/perro_original_recuperado.png  used on inp
 ut line 44.
 (pdftex.def)             Requested size: 154.78653pt x 77.39099pt.
-<img_informe/v_original_recuperado.png, id=171, 722.7pt x 361.35pt>
+<img_informe/v_original_recuperado.png, id=170, 722.7pt x 361.35pt>
 File: img_informe/v_original_recuperado.png Graphic file (type png)
 <use img_informe/v_original_recuperado.png>
 Package pdftex.def Info: img_informe/v_original_recuperado.png  used on input l
@@ -630,7 +630,8 @@ ine 52.
 (pdftex.def)             Requested size: 154.78653pt x 77.39099pt.
 
 
-[4]
+[4 <./img_informe/panda_original_recuperado.png> <./img_informe/perro_original_
+recuperado.png> <./img_informe/v_original_recuperado.png>]
 <img_informe/v_esquinas_10_entrada_parcial_salida.png, id=182, 854.2314pt x 312
 .9291pt>
 File: img_informe/v_esquinas_10_entrada_parcial_salida.png Graphic file (type p
@@ -663,49 +664,47 @@ pe png)
 Package pdftex.def Info: img_informe/perro_diagonal_10_entrada_parcial_salida.p
 ng  used on input line 110.
 (pdftex.def)             Requested size: 232.17242pt x 85.05064pt.
-
-
-[5 <./img_informe/panda_original_recuperado.png> <./img_informe/perro_original_
-recuperado.png> <./img_informe/v_original_recuperado.png> <./img_informe/v_esqu
-inas_10_entrada_parcial_salida.png> <./img_informe/v_esquinas_20_entrada_parcia
-l_salida.png> <./img_informe/perro_diagonal_8_entrada_parcial_salida.png> <./im
-g_informe/perro_diagonal_10_entrada_parcial_salida.png>]
-<img_informe/ruido_30_panda.png, id=203, 573.8238pt x 316.5426pt>
+<img_informe/ruido_30_panda.png, id=188, 573.8238pt x 316.5426pt>
 File: img_informe/ruido_30_panda.png Graphic file (type png)
 <use img_informe/ruido_30_panda.png>
 Package pdftex.def Info: img_informe/ruido_30_panda.png  used on input line 128
 .
 (pdftex.def)             Requested size: 232.17242pt x 128.07347pt.
-<img_informe/ruido_50_panda.png, id=204, 573.8238pt x 316.5426pt>
+<img_informe/ruido_50_panda.png, id=189, 573.8238pt x 316.5426pt>
 File: img_informe/ruido_50_panda.png Graphic file (type png)
 <use img_informe/ruido_50_panda.png>
 Package pdftex.def Info: img_informe/ruido_50_panda.png  used on input line 136
 .
 (pdftex.def)             Requested size: 232.17242pt x 128.07347pt.
-<img_informe/panda_invertido.png, id=209, 573.8238pt x 316.5426pt>
+
+
+[5 <./img_informe/v_esquinas_10_entrada_parcial_salida.png> <./img_informe/v_es
+quinas_20_entrada_parcial_salida.png> <./img_informe/perro_diagonal_8_entrada_p
+arcial_salida.png> <./img_informe/perro_diagonal_10_entrada_parcial_salida.png>
+]
+<img_informe/panda_invertido.png, id=206, 573.8238pt x 316.5426pt>
 File: img_informe/panda_invertido.png Graphic file (type png)
 <use img_informe/panda_invertido.png>
 Package pdftex.def Info: img_informe/panda_invertido.png  used on input line 15
 8.
 (pdftex.def)             Requested size: 232.17242pt x 128.07347pt.
-<img_informe/estado_espurio.png, id=210, 686.565pt x 377.2494pt>
+<img_informe/estado_espurio.png, id=207, 686.565pt x 377.2494pt>
 File: img_informe/estado_espurio.png Graphic file (type png)
 <use img_informe/estado_espurio.png>
 Package pdftex.def Info: img_informe/estado_espurio.png  used on input line 166
 .
 (pdftex.def)             Requested size: 232.17242pt x 127.57233pt.
-<img_informe/paloma_6.png, id=212, 802.197pt x 209.583pt>
+<img_informe/paloma_6.png, id=209, 802.197pt x 209.583pt>
 File: img_informe/paloma_6.png Graphic file (type png)
 <use img_informe/paloma_6.png>
 Package pdftex.def Info: img_informe/paloma_6.png  used on input line 186.
 (pdftex.def)             Requested size: 386.95897pt x 101.09756pt.
-<img_informe/panda_6.png, id=213, 1016.8389pt x 209.583pt>
+<img_informe/panda_6.png, id=210, 1016.8389pt x 209.583pt>
 File: img_informe/panda_6.png Graphic file (type png)
 <use img_informe/panda_6.png>
 Package pdftex.def Info: img_informe/panda_6.png  used on input line 196.
 (pdftex.def)             Requested size: 386.95897pt x 79.75748pt.
-)
-(./tex/desarrollo_ej2.tex
+) (./tex/desarrollo_ej2.tex
 
 [6 <./img_informe/ruido_30_panda.png> <./img_informe/ruido_50_panda.png> <./img
 _informe/panda_invertido.png> <./img_informe/estado_espurio.png>]
@@ -713,44 +712,43 @@ _informe/panda_invertido.png> <./img_informe/estado_espurio.png>]
 [7 <./img_informe/paloma_6.png> <./img_informe/panda_6.png>]
 
 [8]
-<img_informe/correlacion_capacidad.png, id=253, 611.4042pt x 379.4175pt>
+<img_informe/correlacion_capacidad.png, id=251, 611.4042pt x 379.4175pt>
 File: img_informe/correlacion_capacidad.png Graphic file (type png)
 <use img_informe/correlacion_capacidad.png>
 Package pdftex.def Info: img_informe/correlacion_capacidad.png  used on input l
-ine 121.
+ine 120.
 (pdftex.def)             Requested size: 338.58632pt x 210.12183pt.
 ) (./tex/desarrollo_ej3.tex
 
-[9 <./img_informe/correlacion_capacidad.png>]
-<img_informe/error_sinapsis_borrada.png, id=264, 409.7709pt x 312.2064pt>
+[9]
+<img_informe/error_sinapsis_borrada.png, id=266, 409.7709pt x 312.2064pt>
 File: img_informe/error_sinapsis_borrada.png Graphic file (type png)
 <use img_informe/error_sinapsis_borrada.png>
 Package pdftex.def Info: img_informe/error_sinapsis_borrada.png  used on input 
 line 28.
 (pdftex.def)             Requested size: 338.58632pt x 257.9784pt.
-<img_informe/capacidad_sinapsis_borradas.png, id=268, 714.7503pt x 426.393pt>
+
+
+[10 <./img_informe/correlacion_capacidad.png> <./img_informe/error_sinapsis_bor
+rada.png>]
+<img_informe/capacidad_sinapsis_borradas.png, id=278, 714.7503pt x 426.393pt>
 File: img_informe/capacidad_sinapsis_borradas.png Graphic file (type png)
 <use img_informe/capacidad_sinapsis_borradas.png>
 Package pdftex.def Info: img_informe/capacidad_sinapsis_borradas.png  used on i
 nput line 40.
 (pdftex.def)             Requested size: 338.58632pt x 201.99225pt.
-<img_informe/energia_ruido_sinapsis.png, id=269, 714.7503pt x 425.6703pt>
+<img_informe/energia_ruido_sinapsis.png, id=280, 715.473pt x 426.393pt>
 File: img_informe/energia_ruido_sinapsis.png Graphic file (type png)
 <use img_informe/energia_ruido_sinapsis.png>
 Package pdftex.def Info: img_informe/energia_ruido_sinapsis.png  used on input 
-line 51.
-(pdftex.def)             Requested size: 338.58632pt x 201.64989pt.
-
-
-[10 <./img_informe/error_sinapsis_borrada.png>]) (./tex/conclusiones.tex)
-(./tex/appendix.tex)) (./document.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-)
+line 55.
+(pdftex.def)             Requested size: 338.58632pt x 201.78406pt.
+) (./tex/conclusiones.tex
 
 [11 <./img_informe/capacidad_sinapsis_borradas.png> <./img_informe/energia_ruid
-o_sinapsis.png>] (./document.aux
+o_sinapsis.png>]) (./tex/appendix.tex)) (./document.bbl)
+
+[12] (./document.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -759,35 +757,35 @@ LaTeX2e <2025-06-01>
 L3 programming layer <2025-05-26>
  ***********
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: AC584FDEA338817C92EE4201295232CC;5051.
+(rerunfilecheck)             Checksum: 46DD5CDE3A9CD7A74A3C71A17AB38A0B;4586.
  ) 
 Here is how much of TeX's memory you used:
- 18167 strings out of 467892
- 351184 string characters out of 5438323
- 746175 words of memory out of 5000000
- 46430 multiletter control sequences out of 15000+600000
- 636309 words of font info for 75 fonts, out of 8000000 for 9000
+ 18180 strings out of 467892
+ 351283 string characters out of 5438323
+ 746411 words of memory out of 5000000
+ 46442 multiletter control sequences out of 15000+600000
+ 636668 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,13n,97p,970b,1381s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2025/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2025/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:
-/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/20
-25/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9
-.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb>
-Output written on document.pdf (11 pages, 640365 bytes).
+pe1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmcsc10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texliv
+e/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb>
+Output written on document.pdf (12 pages, 646923 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 296 compressed objects within 3 object streams
+ 386 PDF objects out of 1000 (max. 8388607)
+ 299 compressed objects within 3 object streams
  73 named destinations out of 1000 (max. 500000)
- 299 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,27 +1,26 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1}Introducción Teórica}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Arquitectura y Regla de Aprendizaje}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Dinámica de Recuperación y Energía}{3}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Capacidad de Almacenamiento}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.1}Regla de Aprendizaje y Almacenamiento}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Dinámica de Actualización}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Función de Energía y Atractores}{3}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Estados Espurios}{3}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Análisis Estadístico de la Capacidad y Probabilidad de Error}{3}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.5}Capacidad}{4}{subsection.1.5}%
 \contentsline {section}{\numberline {2}Ejercicio 1}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Consigna}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Resolución}{4}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Preprocesamiento}{4}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Verificación de entrenamiento}{4}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}Patrones alterados}{5}{subsubsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.4}Estados espurios}{6}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4}Estados espurios}{5}{subsubsection.2.2.4}%
 \contentsline {subsubsection}{\numberline {2.2.5}Entrenamiento de la red con los 6 patrones}{6}{subsubsection.2.2.5}%
-\contentsline {section}{\numberline {3}Ejercicio 2}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Consigna}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Resolución}{7}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Metodología experimental para patrones descorrelacionados}{7}{subsubsection.3.2.1}%
+\contentsline {section}{\numberline {3}Ejercicio 2}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Consigna}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Metodología experimental para patrones descorrelacionados}{6}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Generación de patrones correlacionados}{8}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Capacidad de la red en función de la correlación}{9}{subsubsection.3.3.1}%
-\contentsline {section}{\numberline {4}Ejercicio 3}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Consigna}{10}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Resolución}{10}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Error frente a perdida de sinapsis}{10}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Capacidad frente a pérdida de sinapsis}{10}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Energía ante actualización asincrónica}{11}{subsubsection.4.2.3}%
+\contentsline {subsection}{\numberline {3.4}Capacidad de la red en función de la correlación}{9}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Ejercicio 3}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Consigna}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Error frente a perdida de sinapsis}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Capacidad frente a pérdida de sinapsis}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Energía ante actualización asincrónica}{11}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Conclusiones}{12}{section.5}%

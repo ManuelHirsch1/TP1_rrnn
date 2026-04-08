@@ -10,29 +10,34 @@
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \bibstyle{ieeetr}
 \babel@aux{spanish}{}
+\citation{hertz1991}
+\citation{hertz1991}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introducción Teórica}{3}{section.1}\protected@file@percent }
 \newlabel{sec:intro}{{1}{3}{Introducción Teórica}{section.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Arquitectura y Regla de Aprendizaje}{3}{subsection.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Dinámica de Recuperación y Energía}{3}{subsection.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Capacidad de Almacenamiento}{3}{subsection.1.3}\protected@file@percent }
-\newlabel{sec:intro_almacenamiento}{{1.3}{3}{Capacidad de Almacenamiento}{subsection.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Regla de Aprendizaje y Almacenamiento}{3}{subsection.1.1}\protected@file@percent }
+\newlabel{eq:hebb}{{1}{3}{Regla de Aprendizaje y Almacenamiento}{equation.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Dinámica de Actualización}{3}{subsection.1.2}\protected@file@percent }
+\newlabel{eq:campo_local}{{2}{3}{Dinámica de Actualización}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Función de Energía y Atractores}{3}{subsection.1.3}\protected@file@percent }
+\newlabel{eq:energia}{{3}{3}{Función de Energía y Atractores}{equation.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Estados Espurios}{3}{subsection.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5}Análisis Estadístico de la Capacidad y Probabilidad de Error}{3}{subsection.1.5}\protected@file@percent }
-\newlabel{subsec:capacidad_estadistica}{{1.5}{3}{Análisis Estadístico de la Capacidad y Probabilidad de Error}{subsection.1.5}{}}
+\newlabel{subsec:espurios}{{1.4}{3}{Estados Espurios}{subsection.1.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5}Capacidad}{4}{subsection.1.5}\protected@file@percent }
+\newlabel{subsec:capacidad}{{1.5}{4}{Capacidad}{subsection.1.5}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Ejercicio 1}{4}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Consigna}{4}{subsection.2.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Resolución}{4}{subsection.2.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Preprocesamiento}{4}{subsubsection.2.2.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Verificación de entrenamiento}{4}{subsubsection.2.2.2}\protected@file@percent }
-\newlabel{fig:panda_original_recuperado}{{1a}{5}{Panda original vs. red}{figure.caption.2}{}}
-\newlabel{sub@fig:panda_original_recuperado}{{a}{5}{Panda original vs. red}{figure.caption.2}{}}
-\newlabel{fig:perro_original_recuperado}{{1b}{5}{Perro original vs. red}{figure.caption.2}{}}
-\newlabel{sub@fig:perro_original_recuperado}{{b}{5}{Perro original vs. red}{figure.caption.2}{}}
-\newlabel{fig:v_original_recuperado}{{1c}{5}{Imágen 'v' original vs. red}{figure.caption.2}{}}
-\newlabel{sub@fig:v_original_recuperado}{{c}{5}{Imágen 'v' original vs. red}{figure.caption.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Comparación entre las imágenes originales y las que devuelve la red.}}{5}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:panda_original_recuperado}{{1a}{4}{Panda original vs. red}{figure.caption.2}{}}
+\newlabel{sub@fig:panda_original_recuperado}{{a}{4}{Panda original vs. red}{figure.caption.2}{}}
+\newlabel{fig:perro_original_recuperado}{{1b}{4}{Perro original vs. red}{figure.caption.2}{}}
+\newlabel{sub@fig:perro_original_recuperado}{{b}{4}{Perro original vs. red}{figure.caption.2}{}}
+\newlabel{fig:v_original_recuperado}{{1c}{4}{Imágen 'v' original vs. red}{figure.caption.2}{}}
+\newlabel{sub@fig:v_original_recuperado}{{c}{4}{Imágen 'v' original vs. red}{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Comparación entre las imágenes originales y las que devuelve la red.}}{4}{figure.caption.2}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:1_a}{{1}{5}{Comparación entre las imágenes originales y las que devuelve la red}{figure.caption.2}{}}
+\newlabel{fig:1_a}{{1}{4}{Comparación entre las imágenes originales y las que devuelve la red}{figure.caption.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Patrones alterados}{5}{subsubsection.2.2.3}\protected@file@percent }
 \newlabel{fig:v_esquinas_10}{{2a}{5}{Borradas con 10 píxeles de lado}{figure.caption.3}{}}
 \newlabel{sub@fig:v_esquinas_10}{{a}{5}{Borradas con 10 píxeles de lado}{figure.caption.3}{}}
@@ -46,53 +51,59 @@
 \newlabel{sub@fig:perro_diagonal_10}{{b}{5}{Diagonales con 10 píxeles de grosor}{figure.caption.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Performance de la red ante pintado de las diagonales con distintos grosores.}}{5}{figure.caption.4}\protected@file@percent }
 \newlabel{fig:1_b_perro}{{3}{5}{Performance de la red ante pintado de las diagonales con distintos grosores}{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}Estados espurios}{5}{subsubsection.2.2.4}\protected@file@percent }
+\citation{hertz1991}
+\citation{hertz1991}
 \newlabel{fig:ruido_30_panda}{{4a}{6}{Ruido del 30\% en los píxeles}{figure.caption.5}{}}
 \newlabel{sub@fig:ruido_30_panda}{{a}{6}{Ruido del 30\% en los píxeles}{figure.caption.5}{}}
 \newlabel{fig:ruido_50_panda}{{4b}{6}{Ruido del 50\% en los píxeles}{figure.caption.5}{}}
 \newlabel{sub@fig:ruido_50_panda}{{b}{6}{Ruido del 50\% en los píxeles}{figure.caption.5}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Performance de la red ante ruido en los píxeles.}}{6}{figure.caption.5}\protected@file@percent }
 \newlabel{fig:1_b_panda}{{4}{6}{Performance de la red ante ruido en los píxeles}{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}Estados espurios}{6}{subsubsection.2.2.4}\protected@file@percent }
 \newlabel{fig:panda_invertido}{{5a}{6}{Rendimiento ante un patrón invertido}{figure.caption.6}{}}
 \newlabel{sub@fig:panda_invertido}{{a}{6}{Rendimiento ante un patrón invertido}{figure.caption.6}{}}
-\newlabel{fig:estado_espurio}{{5b}{6}{Rendimiento ante un estado espurio}{figure.caption.6}{}}
-\newlabel{sub@fig:estado_espurio}{{b}{6}{Rendimiento ante un estado espurio}{figure.caption.6}{}}
+\newlabel{fig:estado_espurio}{{5b}{6}{Rendimiento ante suma impar de patrones}{figure.caption.6}{}}
+\newlabel{sub@fig:estado_espurio}{{b}{6}{Rendimiento ante suma impar de patrones}{figure.caption.6}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Análisis de los estados espurios en la red.}}{6}{figure.caption.6}\protected@file@percent }
 \newlabel{fig:analisis_estados_espurios}{{5}{6}{Análisis de los estados espurios en la red}{figure.caption.6}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.5}Entrenamiento de la red con los 6 patrones}{6}{subsubsection.2.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Ejercicio 2}{6}{section.3}\protected@file@percent }
+\newlabel{sec:ej2}{{3}{6}{Ejercicio 2}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Consigna}{6}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Metodología experimental para patrones descorrelacionados}{6}{subsection.3.2}\protected@file@percent }
+\newlabel{subsec:metodologia_ej2}{{3.2}{6}{Metodología experimental para patrones descorrelacionados}{subsection.3.2}{}}
 \newlabel{fig:paloma_6}{{6a}{7}{Evolución de la red frente a la paloma}{figure.caption.7}{}}
 \newlabel{sub@fig:paloma_6}{{a}{7}{Evolución de la red frente a la paloma}{figure.caption.7}{}}
 \newlabel{fig:panda_6}{{6b}{7}{Evolución de la red ante el panda}{figure.caption.7}{}}
 \newlabel{sub@fig:panda_6}{{b}{7}{Evolución de la red ante el panda}{figure.caption.7}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Rendimiento de la red con entrenamiento de 6 imágenes.}}{7}{figure.caption.7}\protected@file@percent }
 \newlabel{fig:train_6}{{6}{7}{Rendimiento de la red con entrenamiento de 6 imágenes}{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Ejercicio 2}{7}{section.3}\protected@file@percent }
-\newlabel{sec:ej2}{{3}{7}{Ejercicio 2}{section.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Consigna}{7}{subsection.3.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Valores teóricos de probabilidad de error y capacidad límite (Tabla 2.1, sección 2.2, Hertz, Krogh \& Palmer, pág. 19).}}{7}{table.caption.8}\protected@file@percent }
-\newlabel{tab:teorica_hertz}{{1}{7}{Valores teóricos de probabilidad de error y capacidad límite (Tabla 2.1, sección 2.2, Hertz, Krogh \& Palmer, pág. 19)}{table.caption.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Resolución}{7}{subsection.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Metodología experimental para patrones descorrelacionados}{7}{subsubsection.3.2.1}\protected@file@percent }
-\newlabel{subsec:metodologia_ej2}{{3.2.1}{7}{Metodología experimental para patrones descorrelacionados}{subsubsection.3.2.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Valores teóricos de probabilidad de error y capacidad límite (Tabla 2.1, sección 2.2, \cite  {hertz1991}, pág. 19).}}{7}{table.caption.8}\protected@file@percent }
+\newlabel{tab:teorica_hertz}{{1}{7}{Valores teóricos de probabilidad de error y capacidad límite (Tabla 2.1, sección 2.2, \cite {hertz1991}, pág. 19)}{table.caption.8}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Resultados experimentales de la capacidad límite de la red en función de la probabilidad de error tolerada.}}{8}{table.caption.9}\protected@file@percent }
 \newlabel{tab:resultados_ej2}{{2}{8}{Resultados experimentales de la capacidad límite de la red en función de la probabilidad de error tolerada}{table.caption.9}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Generación de patrones correlacionados}{8}{subsection.3.3}\protected@file@percent }
 \newlabel{subsec:patrones_correlacionados}{{3.3}{8}{Generación de patrones correlacionados}{subsection.3.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Capacidad de la red en función de la correlación}{9}{subsubsection.3.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Relación entre correlación y capacidad de la red para distintos umbrales de error.}}{9}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:corr_vs_cap}{{7}{9}{Relación entre correlación y capacidad de la red para distintos umbrales de error}{figure.caption.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Ejercicio 3}{10}{section.4}\protected@file@percent }
-\newlabel{sec:ej3}{{4}{10}{Ejercicio 3}{section.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Consigna}{10}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Resolución}{10}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Error frente a perdida de sinapsis}{10}{subsubsection.4.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Capacidad de la red en función de la correlación}{9}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Ejercicio 3}{9}{section.4}\protected@file@percent }
+\newlabel{sec:ej3}{{4}{9}{Ejercicio 3}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Consigna}{9}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Error frente a perdida de sinapsis}{9}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Relación entre correlación y capacidad de la red para distintos umbrales de error.}}{10}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:corr_vs_cap}{{7}{10}{Relación entre correlación y capacidad de la red para distintos umbrales de error}{figure.caption.10}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Error total en función del procentaje de sinapsis borradas.}}{10}{figure.caption.11}\protected@file@percent }
 \newlabel{fig:error_sinapsis}{{8}{10}{Error total en función del procentaje de sinapsis borradas}{figure.caption.11}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Capacidad frente a pérdida de sinapsis}{10}{subsubsection.4.2.2}\protected@file@percent }
-\bibdata{bibliography.bib}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Capacidad frente a pérdida de sinapsis}{10}{subsection.4.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Capacidad en función del procentaje de sinapsis borradas.}}{11}{figure.caption.12}\protected@file@percent }
 \newlabel{fig:cap_sin}{{9}{11}{Capacidad en función del procentaje de sinapsis borradas}{figure.caption.12}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Energía ante actualización asincrónica}{11}{subsubsection.4.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Energía ante actualización asincrónica}{11}{subsection.4.4}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Energía en función de la época.}}{11}{figure.caption.13}\protected@file@percent }
 \newlabel{fig:energia}{{10}{11}{Energía en función de la época}{figure.caption.13}{}}
-\gdef \@abspage@last{11}
+\bibdata{bibliography.bib}
+\bibcite{hertz1991}{{1}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\newlabel{tab:asim_dam}{{\caption@xref {tab:asim_dam}{ on input line 72}}{12}{Energía ante actualización asincrónica}{table.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Resultados de recuperación ante daño asimétrico (Ruido inicial fijo: 30\%)}}{12}{table.caption.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusiones}{12}{section.5}\protected@file@percent }
+\newlabel{sec:conclusion}{{5}{12}{Conclusiones}{section.5}{}}
+\gdef \@abspage@last{12}
